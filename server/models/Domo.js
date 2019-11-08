@@ -42,7 +42,6 @@ DomoSchema.statics.findByOwner = (ownerId, callback) => {
     }
 
     return DomoModel.find(search).select('name age').exec(callback);
-    console.log('g');
 }
 
 DomoModel = mongoose.model('Domo', DomoSchema);
